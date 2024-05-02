@@ -36,7 +36,7 @@ class WordPress:
                     if req.status_code == 200:
                         self.results.append(url)
                 if self.results:
-                    print(self.results)
+                    print('\n'.join(str(x) for x in self.results))
                 else:
                     print('0 endpoints')
                 
